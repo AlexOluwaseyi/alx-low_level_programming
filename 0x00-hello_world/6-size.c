@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * This a program which prints the size of various types
- * on the computer it is compiled and run on.
+ * C program that prints the size of various 
+ * types on the computer it is compiled and run on
+ * 
+ * main - Entry point
  *
- * int main(void) - Entry point
- *
- * return (0) when successful.
- *
-*/
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char CHAR;

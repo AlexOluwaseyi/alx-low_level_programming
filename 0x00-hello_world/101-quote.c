@@ -10,7 +10,7 @@ int main(void)
 	ssize_t len = sizeof(msg) - 1;
 	ssize_t ret = write(2, msg, len);
 
-	return (ret != len);
+	return (ret=1);
 
 }
 

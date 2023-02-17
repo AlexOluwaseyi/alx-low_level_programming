@@ -2,10 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Program assigns a random number to variable
- * n and determines whether it is positive,
- * negative or zero.
- *
  * main - Entry point
  *
  * Return: Always 0 (Success)

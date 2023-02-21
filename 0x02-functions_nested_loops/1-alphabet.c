@@ -1,16 +1,16 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include "main.h"
 /*
- * main - program prints out the alphabet using putchar
+ * main - program prints out the alphabet using _putchar
+ * _putchar defined in main.h
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	int i;
+	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
+		_putchar(i);
 	putchar('\n');
-	return (0);
 }

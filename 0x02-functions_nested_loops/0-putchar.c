@@ -5,7 +5,7 @@
  * main - Program that prints _putchar
  * followed by a newline using _putchar function.
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {

@@ -1,10 +1,8 @@
 #include<stdio.h>
 #include "main.h"
 
-/*
- * print_alphabet - Alphabets
- *
- * Return: void
+/**
+ * print_alphabet - prints the alphabet.
  */
 void print_alphabet(void)
 {

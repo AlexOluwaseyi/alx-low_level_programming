@@ -7,17 +7,18 @@
  */
 int main(void)
 {
-	int prev = 1;
-	int next = 2;
-	int i, sum;
+	unsigned long prev = 1;
+	unsigned long next = 2;
+	unsigned long sum;
+	int i;
 
-	for (i = 0; i < 47; i++)
+	for (i = 0; i < 49; i++)
 	{
-		printf("%d, ", prev);
+		printf("%lu, ", prev);
 		sum = prev + next;
 		prev = next;
 		next = sum;
 	}
-	printf("%d\n", prev);
+	printf("%lu\n", prev);
 	return (0);
 }

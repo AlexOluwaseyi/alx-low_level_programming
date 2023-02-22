@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- * times_table - prints the multiplication table from 0 to 9
+ * print_times_table - prints the multiplication table from 0 to 9
+ * @n: Limit of multiplication table
  */
 void print_times_table(int n)
 {
-	int i, j, prod;
-	int x;
+	int i, j, prod, x;
 
-	
 	if ((n < 0) || (n > 15))
 	{
 	}
@@ -19,8 +17,7 @@ void print_times_table(int n)
 		{
 			for (j = 0; j <= n; j++)
 			{
-				prod = i;
-				prod *= j;
+				prod = i * j;
 				if (i == 0)
 				{
 					_putchar(prod + '0');
@@ -65,4 +62,3 @@ void print_times_table(int n)
 		}
 	}
 }
-

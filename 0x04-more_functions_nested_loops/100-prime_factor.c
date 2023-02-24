@@ -15,10 +15,10 @@ int main(void)
 	{
 		while (n % x == 0)
 		{
-			printf("%d ", x);
 			n /= x;
 		}
 	}
+	printf("%d", x - 1);
 	printf("\n");
 	return (0);
 }

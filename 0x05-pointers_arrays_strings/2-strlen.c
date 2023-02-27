@@ -3,6 +3,8 @@
 /**
  * _strlen - Counts the length of a string
  * @s: The string to be counted
+ *
+ * Return: The length of the string (i)
  */
 
 int _strlen(char *s)

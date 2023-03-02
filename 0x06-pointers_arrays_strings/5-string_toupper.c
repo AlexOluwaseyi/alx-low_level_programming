@@ -3,6 +3,8 @@
 /**
  * string_toupper - Convert lowercase characters to uppercase
  * @n: string with lowercase characters
+ *
+ * Return: n
  */
 
 char *string_toupper(char *n)

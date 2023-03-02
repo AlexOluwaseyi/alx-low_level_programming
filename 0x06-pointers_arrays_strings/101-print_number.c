@@ -2,44 +2,25 @@
 
 /**
  * print_number - prints an integer
- * @n: Negative or positive integer
+ * @n: integer to be printed
  */
-
 void print_number(int n)
 {
-	if (n >= 0 && n <= 9)
-		_putchar(n + '0');
-	if (n >= 10 && n <= 99)
+	unsigned int n1;
+
+	if (n < 0)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	if (n >= 100 && n <= 999)
-	{
-		_putchar((n / 100) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	if (n >= 1000 && n <= 9999)
-	{
-		_putchar((n / 1000) + '0');
-		_putchar(((n / 100) % 10) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	if (n < 0 && n >= -99)
-	{
-		n = -(n);
+		n1 = -n;
 		_putchar('-');
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
 	}
-	if (n <= -100 && n >= -999)
+	else
 	{
-		n = -(n);
-		_putchar('-');
-		_putchar((n / 100) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
+		n1 = n;
 	}
+
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }

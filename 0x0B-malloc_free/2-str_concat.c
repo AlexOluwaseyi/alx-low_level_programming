@@ -20,8 +20,14 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[j] != '\0')
 		j++;
+	if (s1 == NULL)
+		i++;
+	if (s2 == NULL)
+		j++;
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 
-	newString = malloc((sizeof(char) * (i + 1)) + (sizeof(char) * (j + 1)));
+	newString = malloc((sizeof(char) * i) + (sizeof(char) * (j + 1)));
 	for (r = 0; r < i; r++)
 	{
 		newString[r] = s1[r];

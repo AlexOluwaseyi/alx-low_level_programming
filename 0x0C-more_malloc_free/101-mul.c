@@ -6,7 +6,7 @@
  * main - multiplies two positive numbers
  * @argc: number of arguments
  * @argv: arguments passed to command line
- * 
+ *
  * Return: Always 0.
  */
 

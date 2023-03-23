@@ -46,10 +46,11 @@ int op_mul(int a, int b)
 
 int op_div(int a, int b)
 {
-	return ( a / b);
+	return (a / b);
 }
 
-/** op_mod - finds the modulus after division
+/**
+ * op_mod - finds the modulus after division
  * @a: first integer
  * @b: second integer
  * Return: Modulus after division

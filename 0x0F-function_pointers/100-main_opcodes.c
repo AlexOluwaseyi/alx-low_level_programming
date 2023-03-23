@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	p = (char *)main;
 	for (i = 0; i < size; i++)
 	{
-		printf("%02x ", *(p + i) & 0xff);
+		printf("%02hhx ", *(p + i));
 	}
 	printf("\n");
 	return (0);

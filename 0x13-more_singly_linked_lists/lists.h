@@ -15,10 +15,10 @@
  * Description: Singly linked list node structure
  */
 
-typedef struct listint_s
+typedef struct list
 {
 	int n;
-	struct listint_s *next;
+	struct list *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);

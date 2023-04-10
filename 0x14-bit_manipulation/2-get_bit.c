@@ -5,7 +5,7 @@
  * @n: number to be converted to binary
  * @index: location of bit to return
  *
- * Return: Value at index 
+ * Return: Value at index
  * or -1 if error occured
  */
 

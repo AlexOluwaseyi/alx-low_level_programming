@@ -8,8 +8,7 @@
 
 /**
  * struct list - singly linked list
- * @str: string
- * @len: length of the string
+ * @n: string
  * @next: pointer to the next node
  *
  * Description: Singly linked list node structure

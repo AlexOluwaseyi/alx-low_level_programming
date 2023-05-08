@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - sets bit at index to 1
+ *  - sets bit at index to 1
  * @n: integer to be converted to decimal
  * @index: index at which bit is to be chaged to 1
  */

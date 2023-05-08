@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *  - sets bit at index to 1
+ * set_bit - sets bit at index to 1
  * @n: integer to be converted to decimal
  * @index: index at which bit is to be chaged to 1
+ * Return: -1 on error, and 1 on success
  */
 
 int set_bit(unsigned long int *n, unsigned int index)

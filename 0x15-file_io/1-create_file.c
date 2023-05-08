@@ -8,18 +8,18 @@
  * Return: 1 on success. -1 on failure
  */
 
-int create_file(const char *filename, char *text)
+int create_file(const char *filename, char *text_content)
 {
 	int i = 0, fd;
 
 	if (filename == NULL)
 		return (-1);
 
-	if (text == NULL)
-		text = "";
+	if (text_content == NULL)
+		text_content = "";
 
 	/* Count the number of characters in the text */
-	while (text[i] != '\0')
+	while (text_content[i] != '\0')
 		i++;
 
 	/* Create or truncate the file and open it for writing */
@@ -28,7 +28,7 @@ int create_file(const char *filename, char *text)
 		return (-1);
 
 	/* Write the text to the file */
-	if (write(fd, text, i) != i)
+	if (write(fd, text_content, i) != i)
 	{
 		close(fd);
 		return (-1);

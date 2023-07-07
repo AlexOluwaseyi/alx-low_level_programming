@@ -8,25 +8,22 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int mask = 2147483648;
-	int bitCount = 0;
-	int i;
+	unsigned long int printbit = 1ul << 63;
+	char c = '0';
 
-	for (i = 0; i < 32; i++)
+	while (!(printbit & n) && printbit != 0)
+		printbit = printbit >> 1;
+
+	if (printbit == 0)
+		write(1, &c, 1);
+
+	while (printbit)
 	{
-		if ((n & mask) != 0)
-		{
-			bitCount = 1;
-			_putchar('1');
-		}
-		else if (bitCount == 1)
-		{
-			_putchar('0');
-		}
-		n <<= 1;
-	}
-	if (bitCount == 0)
-	{
-		_putchar('0');
+		if (printbit & n)
+			c = '1';
+		else
+			c = '0';
+		write(1, &c, 1);
+		printbit = printbit >> 1;
 	}
 }

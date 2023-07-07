@@ -11,24 +11,11 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int mask = 1;
-	unsigned long int num_bits = 0;
-	unsigned long int copy_n = n;
+	unsigned long int m;
 
-	while (copy_n > 0)
-	{
-		copy_n >>= 1;
-		num_bits++;
-	}
-	if (index >= num_bits)
-	{
+	if (index > 63)
 		return (-1);
-	}
-	mask <<= index;
-	if ((n & mask) != 0)
-	{
-		return (1);
-	}
-	else
-		return (0);
+
+	m = 1 << index;
+	return ((n & m) > 0);
 }

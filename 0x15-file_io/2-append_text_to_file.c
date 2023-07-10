@@ -5,7 +5,7 @@
  * @filename: pointer to file to create/read from
  * @text_content: content to be read or write to file
  *
- * Return: 1 on success. 
+ * Return: 1 on success.
  * Or -1 on failure or if filename is NULL
  */
 

@@ -7,7 +7,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <malloc.h>
-
+#include <fcntl.h>
 
 /* Function prototypes */
 ssize_t read_textfile(const char *filename, size_t letters);

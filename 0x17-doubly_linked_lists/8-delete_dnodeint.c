@@ -2,6 +2,7 @@
 
 /**
  * delete_dnodeint_at_index - deletes the node at index
+ * @head: pointer to first node in the list
  * @index: pointer node to be deleted.
  *
  * Return: On success - 1 and 0 on failure.

@@ -36,11 +36,12 @@ int exponential_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search - searches for a value in a sorted array
+ * binary_search2 - searches for a value in a sorted array
  * of integers using the Binary search algorithm
  * @array: a pointer to the first element of the array to search in
- * @size: the number of elements in array
  * @value: the value to search for
+ * @low: low point
+ * @high: high point 
  * Return: -1 if value not in array or array is NULL
  * Else, return index of value
  */
@@ -64,7 +65,7 @@ int binary_search2(int *array, int value, int low, int high)
 		}
 
 		if (array[mid] == value)
-			return mid;
+			return (mid);
 
 		if (array[mid] < value)
 			low = mid + 1;

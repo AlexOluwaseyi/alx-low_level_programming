@@ -41,7 +41,7 @@ int exponential_search(int *array, size_t size, int value)
  * @array: a pointer to the first element of the array to search in
  * @value: the value to search for
  * @low: low point
- * @high: high point 
+ * @high: high point
  * Return: -1 if value not in array or array is NULL
  * Else, return index of value
  */
